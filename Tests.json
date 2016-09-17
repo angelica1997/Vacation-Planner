@@ -1,0 +1,102 @@
+[
+    {
+        "name": "New York City Fire Museum", 
+        "place_id": "ChIJsblxMfNZwokRBLOhQZRjwtE", 
+        "website": "http://www.nycfiremuseum.org/"
+    }, 
+    {
+        "name": "Brooklyn Heights Promenade", 
+        "place_id": "ChIJkwX1AjdawokRx9reOccHFr4", 
+        "website": "http://www.nycgovparks.org/about/history/historical-signs/listings?id=136"
+    }, 
+    {
+        "name": "Federal Hall", 
+        "place_id": "ChIJAaIFAxdawokR8txc3YPbD3A", 
+        "website": "http://www.nps.gov/feha/index.htm"
+    }, 
+    {
+        "name": "Brooklyn Bridge Park", 
+        "place_id": "ChIJjaFpo0ZawokRBcOFUZ13CaE", 
+        "website": "http://www.brooklynbridgepark.org/"
+    }, 
+    {
+        "name": "Washington Square Park", 
+        "place_id": "ChIJjX494pBZwokRGH620d9eYfo", 
+        "website": "http://www.nycgovparks.org/parks/washingtonsquarepark"
+    }, 
+    {
+        "name": "Battery Park", 
+        "place_id": "ChIJraKL-BJawokREpxDmF5GcL4", 
+        "website": "http://www.thebattery.org/"
+    }, 
+    {
+        "name": "Charging Bull", 
+        "place_id": "ChIJURWoF5pYwokRIfXv4To528c", 
+        "website": "http://www.chargingbull.com/"
+    }, 
+    {
+        "name": "9/11 Tribute Center", 
+        "place_id": "ChIJx-iK_xlawokRlBF6PdBd_F4", 
+        "website": "http://www.tributewtc.org/"
+    }, 
+    {
+        "name": "Statue of Liberty National Monument", 
+        "place_id": "ChIJPTacEpBQwokRKwIlDXelxkA", 
+        "website": "http://www.nps.gov/stli/index.htm"
+    }, 
+    {
+        "name": "African Burial Ground National Monument", 
+        "place_id": "ChIJM3a4kCFawokRDRxdeYJQgnE", 
+        "website": "http://www.nps.gov/afbg"
+    }, 
+    {
+        "name": "Zuccotti Park", 
+        "place_id": "ChIJd_J7XBdawokRpAdtBwzIx0s", 
+        "website": null
+    }, 
+    {
+        "name": "Union Square Park", 
+        "place_id": "ChIJuwazLZ9ZwokRoDhp6p5_XCo", 
+        "website": "http://www.nycgovparks.org/parks/unionsquarepark"
+    }, 
+    {
+        "name": "9/11 Memorial", 
+        "place_id": "ChIJRcvoOxpawokR7R4dQMXMMPQ", 
+        "website": "http://www.911memorial.org/"
+    }, 
+    {
+        "name": "One World Observatory", 
+        "place_id": "ChIJTWE_0BtawokRVJNGH5RS448", 
+        "website": "https://oneworldobservatory.com/"
+    }, 
+    {
+        "name": "Helicopter New York City", 
+        "place_id": "ChIJ1XWeAxVawokRw4FTwn22DPA", 
+        "website": "http://www.helicopternewyorkcity.com/"
+    }, 
+    {
+        "name": "9/11 Memorial", 
+        "place_id": "ChIJrb2DPBpawokRID24oICA7EY", 
+        "website": "http://www.911memorial.org/museum"
+    }, 
+    {
+        "name": "The Woolworth Building", 
+        "place_id": "ChIJUSBl7RhawokR1uWCCvWriXQ", 
+        "website": null
+    }, 
+    {
+        "name": "Blood Manor", 
+        "place_id": "ChIJd4SaOo1ZwokRgzYcq4Y9Mxk", 
+        "website": "http://www.bloodmanor.com/"
+    }, 
+    {
+        "name": "Statue Cruises", 
+        "place_id": "ChIJkZ_JUaFQwokR9K1ImO6OUaU", 
+        "website": "http://www.statuecruises.com/"
+    }, 
+    {
+        "name": "Statue Cruises, LLC", 
+        "place_id": "ChIJ24veYxJawokRgNQMoroMjw0", 
+        "website": "http://www.statuecruises.com/"
+    }
+]
