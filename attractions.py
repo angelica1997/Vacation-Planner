@@ -19,6 +19,7 @@ def hello():
 	res = query_result.raw_response
 
 	dic = []
+	i = 0
 	for place in query_result.places:
 	    # Returned places from a query are place summaries.
 	    place1={}
@@ -26,16 +27,19 @@ def hello():
 	    place1['name'] = place.name
 	    place1['website'] = place.website
 	    place1['place_id'] = place.place_id
+	    place1['rank'] = i
 	    #loc = place.geo_location
 	    #lat = loc['lat']
 	    #lng = loc['lng']
 	    #print lat
 	    dic.append(place1)
+	    i+=1
 
 	j = json.dumps(dic,sort_keys=True, indent=4)
 
-	#with open('Tests.json','w') as outf:
-	#	outf.write(j)
+	with open('Tests.json','w') as outf:
+		outf.write(j)
+		
 	return j
 
 if __name__ == "__main__":
