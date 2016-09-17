@@ -6,8 +6,7 @@ app = Flask(__name__)
  
 @app.route("/")
 def hello():
-    return render_template("pics_test.html")
-
+    return render_template("index.html")
 
  
 @app.route('/signUp')
@@ -21,4 +20,4 @@ def signUpUser():
     return json.dumps({'status':'OK','user':user,'pass':password});
  
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
