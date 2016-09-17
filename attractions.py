@@ -10,7 +10,7 @@ def hello():
 	location = 'London'
 	YOUR_API_KEY = 'AIzaSyBV_VtVaZJfy54pQiviMq2ZFllqQokZE3I'
 
-	google_places = GooglePlaces('AIzaSyBV_VtVaZJfy54pQiviMq2ZFllqQokZE3I')
+	google_places = GooglePlaces(YOUR_API_KEY)
 	MyUrl = ('https://maps.googleapis.com/maps/api/place/textsearch/'
 			 'json?query=tourist+attraction+'+location+
 			 '&key=AIzaSyBV_VtVaZJfy54pQiviMq2ZFllqQokZE3I')  #grabbing the JSON result
