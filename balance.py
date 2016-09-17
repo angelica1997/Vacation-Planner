@@ -8,28 +8,38 @@ def process(clust):
 	j = 0
 	while (j < len(clust)):
 		if (len(clust[j]) < 4):
-			YOUR_API_KEY = 'AIzaSyDcivoD8aUEhmSk-yb5GLd1FovUrt8xgpc'
+			YOUR_API_KEY = 'AIzaSyBdND_8stEjVtLh_jZVxODQSwQpzNnFdMU'
 			center = min(clust[j], key=lambda t:t[2])
 			lat = str(center[0])
 			lng = str(center[1])
 			google_places = GooglePlaces(YOUR_API_KEY)
-			geo = google_places.nearby_search(
-	        		   location=lat+','+lng,radius = 1000, keyword='attraction')
+			LOCATION = lat+','+lng
+			QUERY = 'attraction'
+			MyUrl = ('https://maps.googleapis.com/maps/api/place/nearbysearch/json'
+					 '?location=%s'
+					 '&radius=1000'
+					 '&key=%s') % (LOCATION, YOUR_API_KEY)
 
-			for c in geo.places:
+			response = urllib.urlopen(MyUrl)
+			jsonRaw = response.read()
+			jsonData = json.loads(jsonRaw)
+			results = jsonData['results']
+
+			for each in results:
 				if(len(clust[j]) > 3):
 					break
 				place1={}
-				c.get_details()
-				lat = c.geo_location['lat']
-				lng = c.geo_location['lng']
-				place_id = c.place_id
+				geo = each['geometry']['location']
+				lat = geo['lat']
+				lng = geo['lng']
+				place_id = each['place_id']
+				icon = each['icon']
 				rank = len(clust[j])
+				name = each['name']
 				if(notcontain(clust,place_id)):
-					clust[j].append((lat,lng,rank, place_id))
+					clust[j].append((lat,lng,rank,place_id,icon,name))
 
 		j += 1
-
 	return clust
 
 def notcontain(l, x):
