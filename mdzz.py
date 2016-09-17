@@ -3,6 +3,7 @@ import json
 import clustering
 import urllib
 import pprint
+import balance
 
 def search():
 	days = 5
@@ -26,10 +27,10 @@ def search():
 		location.append((lat,lng,each['rank'],each['place_id']))
 		#print(each)
 
-	API_KEY = 'AIzaSyBV_VtVaZJfy54pQiviMq2ZFllqQokZE3I'
 	#print(location)
 	clus = clustering.kmeans(location,days,[])
-	print(clus)
+
+	processed = balance.process(clus)
 
 	#google_places = GooglePlaces(API_KEY)
 	

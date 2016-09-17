@@ -15,6 +15,8 @@ def kmeans(data, k, c):
     old_centroids = [[] for i in range(k)] 
 
     iterations = 0
+    result = [[] for i in range(k)]
+
     while not (has_converged(centroids, old_centroids, iterations)):
         iterations += 1
 
@@ -30,17 +32,16 @@ def kmeans(data, k, c):
             centroids[index] = min(cluster, key=lambda t:t[2])
             index += 1
 
+    #print("The total number of data instances is: " + str(len(data)))
+    #print("The total number of iterations necessary is: " + str(iterations))
+    #print("The means of each cluster are: " + str(centroids))
+    #print("The clusters are as follows:")
+    #for cluster in clusters:
+     #   print("Cluster with a size of " + str(len(cluster)) + " starts here:")
+     #   print(np.array(cluster).tolist())
+     #   print("Cluster ends here.")
 
-    print("The total number of data instances is: " + str(len(data)))
-    print("The total number of iterations necessary is: " + str(iterations))
-    print("The means of each cluster are: " + str(centroids))
-    print("The clusters are as follows:")
-    for cluster in clusters:
-        print("Cluster with a size of " + str(len(cluster)) + " starts here:")
-        print(np.array(cluster).tolist())
-        print("Cluster ends here.")
-
-    return
+    return clusters
 
 # Calculates euclidean distance between
 # a data point and all the available cluster
