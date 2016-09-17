@@ -4,56 +4,113 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+html,
 body {
-    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 50px;
+    /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background: url('splash-photo.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     font-family: Lato;
+    height: 100%;
 }
+
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
-.s-title{
-	margin-left: 5%;
-	margin-top: 15%;
-	font-weight: 500;
-	color: white;
-	font-size: 175px;
+.s-title {
+    margin-left: 5%;
+    margin-top: 15%;
+    font-weight: 500;
+    color: white;
+    font-size: 175px;
 }
 
-.s-subtitle{
-	margin-top: 0;
-	font-size: 30px;
-	font-weight: 300;
-	color: white;
-	margin-left: 8%;
+.s-subtitle {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    margin-left: 8%;
 }
 
-.form-dest{
-	float:right;
-	margin: -4.75% 10% 20% 20%;
+.form-dest {
+    float: right;
+    margin: -4.75% 10% 20% 20%;
 }
 
-.table{
+#map {
+    height: 100%;
 }
 
-.form-control{
-	width: 300px;
-	margin: 20px;
-	font-size: 30px;
-	font-weight: 300;
-	padding: 20px;
-	border-color: none;
-	box-shadow: none;
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.btn{
-	font-size: 20px;
-	padding: 5px 10px 5px 10px;
-	background-color: #0066cc;
-	color: white;
-	outline: none;
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 300px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+.pac-container {
+    font-family: Roboto;
+}
+
+#type-selector {
+    color: #fff;
+    background-color: #4d90fe;
+    padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#target {
+    width: 345px;
+}
+
+.form-control {
+    width: 300px;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px;
+    border-color: none;
+    box-shadow: none;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: #0066cc;
+    color: white;
+    outline: none;
 }
