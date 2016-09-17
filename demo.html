@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = '{
+   "destination_addresses" : [ "San Francisco, CA, USA", "Victoria, BC, Canada" ],
+   "origin_addresses" : [ "Vancouver, BC, Canada", "Seattle, WA, USA" ],
+   "rows" : [
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "1,529 km",
+                  "value" : 1528699
+               },
+               "duration" : {
+                  "text" : "14 hours 56 mins",
+                  "value" : 53778
+               },
+               "status" : "OK"
+            },
+            {
+               "distance" : {
+                  "text" : "115 km",
+                  "value" : 114513
+               },
+               "duration" : {
+                  "text" : "3 hours 14 mins",
+                  "value" : 11614
+               },
+               "status" : "OK"
+            }
+         ]
+      },
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "1,300 km",
+                  "value" : 1299985
+               },
+               "duration" : {
+                  "text" : "12 hours 25 mins",
+                  "value" : 44695
+               },
+               "status" : "OK"
+            },
+            {
+               "distance" : {
+                  "text" : "297 km",
+                  "value" : 296838
+               },
+               "duration" : {
+                  "text" : "4 hours 48 mins",
+                  "value" : 17285
+               },
+               "status" : "OK"
+            }
+         ]
+      }
+   ],
+   "status" : "OK"
+}';
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.destination_addresses + " " + obj.origin_addresses;
+</script>
+
+</body>
+</html>
