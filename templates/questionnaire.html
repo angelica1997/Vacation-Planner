@@ -42,17 +42,57 @@
         <div class="question-text"> Check all the locations that you want to visit!</div>
 
         <div class="locations">
-            <div class="boxes">
+          <div class="boxes">
                 <div class="row">
                     <div class="span2">
                         <label class="checkbox">
-                            <input type="checkbox" id = "checkboxes">
+                            <input type="checkbox" name="optionsCheckboxList1" value="option1"> The Metropolitan Museum of Art
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList2" value="option2"> Statue of Liberty National Monument
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Central Park
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Empire State Building
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> American Museum of Natural History
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> 9/11 Memorial
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Museum of Modern Art
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Battery Park
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> The High Line
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> City Sightseeing New York
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Wall Street
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Intrepid Sea, Air and Space Museum
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> St. Patrick's Cathedral
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Top of The Rock
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" name="optionsCheckboxList3" value="option3"> Chrysler Building
                         </label>
                     </div>
 
                 </div>
-            </div>
-
         </div>
             <th>
                 <a href="schedule.html" id="calculate">
@@ -74,7 +114,7 @@ $.each(json, function () {
                 .prop('checked',this.checked)
                 ));
     });
-    
+
     $("#checkboxes").on('change','[type=checkbox]', function() {
         console.log($(this).val());
     })

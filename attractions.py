@@ -5,7 +5,7 @@ import urllib
 
 def attraction_list():
 
-	YOUR_API_KEY = 'AIzaSyBdND_8stEjVtLh_jZVxODQSwQpzNnFdMU'
+	YOUR_API_KEY = 'AIzaSyBwNcWLEs2CtcXgjur6nbR8JwGsiK-0HGw'
 
 	google_places = GooglePlaces(YOUR_API_KEY)
 

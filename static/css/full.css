@@ -90,13 +90,14 @@ a {
 }
 
 .boxes {
-    margin-left: 35%;
+    margin-left: 30%;
     padding-left: 50px;
     height: 400px;
     overflow: auto;
-    width: 300px;
+    width: 325px;
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 50px;
 }
 
 .checkboxes {
@@ -135,5 +136,5 @@ label {
 }
 
 .pmt {
-    margin-top: -50%;
+    margin-top: -45%;
 }
