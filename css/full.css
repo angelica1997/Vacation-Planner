@@ -1,0 +1,59 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        background: url('splash-photo.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-family: Lato;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.s-title{
+	margin-left: 5%;
+	margin-top: 15%;
+	font-weight: 500;
+	color: white;
+	font-size: 175px;
+}
+
+.s-subtitle{
+	margin-top: 0;
+	font-size: 25px;
+	font-weight: 300;
+	color: white;
+	margin-left: 8%;
+}
+
+.form-dest{
+	float:right;
+	margin: -4.75% 10% 20% 20%;
+}
+
+.table{
+}
+
+.form-control{
+	width: 300px;
+	margin: 20px;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 20px;
+	border-color: none;
+	box-shadow: none;
+}
+
+.btn{
+	font-size: 20px;
+	padding: 5px 10px 5px 10px;
+	background-color: #0066cc;
+	color: white;
+	outline: none;
+}
