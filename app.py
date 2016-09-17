@@ -1,11 +1,14 @@
 from flask import Flask
+
+from flask import render_template
+
 app = Flask(__name__)
  
 @app.route("/")
 def hello():
-    return "Welcome to Python Flask!"
+    return render_template("pics_test.html")
 
-from flask import render_template
+
  
 @app.route('/signUp')
 def signUp():
