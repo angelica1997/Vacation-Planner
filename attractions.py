@@ -3,17 +3,13 @@ from googleplaces import GooglePlaces, types, lang
 import json
 import urllib
 
+def attraction_list():
 
-from flask import Flask
-app = Flask(__name__)
-
-@app.route("/")
-def hello():
 	YOUR_API_KEY = 'AIzaSyBdND_8stEjVtLh_jZVxODQSwQpzNnFdMU'
 
 	google_places = GooglePlaces(YOUR_API_KEY)
 
-	LOCATION = 'New+York'
+	LOCATION = app.send_location()
 	QUERY = 'attraction'
 	MyUrl = ('https://maps.googleapis.com/maps/api/place/textsearch/json'
 		'?query=tourist+attraction+%s'
@@ -48,10 +44,7 @@ def hello():
 
 	with open('Tests.json','w') as outf:
 		outf.write(j)
-		
+
 	return j
 
-hello()
-
-if __name__ == "__main__":
-    app.run()
+#hello()
