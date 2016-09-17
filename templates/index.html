@@ -14,7 +14,6 @@
     <link href="../static/css/full.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="../static/js/jquery.js"></script>
-    <script src="../static/index.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="../static/js/bootstrap.min.js"></script>
 
@@ -34,10 +33,14 @@
                 <input class="form-control" name="loc" type="text" placeholder="Ex. Pittsburgh, PA">
             </th>
             <th>
-                <button type="submit" class="submit btn btn-primary"><a href=# id="calculate">Go!</a></button>
+                <a href="{{ url_for('questionnaire') }}" id="calculate">
+                    <button type="submit" class="submit btn btn-primary">Go!
+                    </button>
+                </a>
             </th>
         </table>
     </div>
+
 
 </body>
 {% extends "layout.html" %} {% block body %}
