@@ -96,17 +96,22 @@ a {
     overflow: auto;
     width: 300px;
     text-align: left;
-    font-weight: 100;
     font-size: 20px;
 }
 
 .checkboxes {
+    font-weight: 100;
     text-align: left;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+}
+
+label {
     font-weight: 100;
 }
 
 .select-style {
+    font-weight: 100;
+    font-size: 20;
     margin-top: 20px;
     margin-left: 40%;
     border: 1px solid #ccc;
@@ -127,4 +132,8 @@ a {
 
 .select-style select:focus {
     outline: none;
+}
+
+.pmt {
+    margin-top: -50%;
 }
